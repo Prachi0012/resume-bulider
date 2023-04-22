@@ -53,7 +53,7 @@ public class LoginActivity extends AppCompatActivity {
         txtsign.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i=new Intent(LoginActivity.this,HomepageActivity.class);
+                Intent i=new Intent(LoginActivity.this,SignupActivity.class);
                 startActivity(i);
             }
         });

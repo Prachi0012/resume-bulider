@@ -16,17 +16,27 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
+        android:orientation="horizontal"
+        android:gravity="center"
         android:paddingVertical="@dimen/_5sdp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
             android:text="Create Resume"
+            android:layout_marginLeft="@dimen/_30sdp"
             android:textColor="@color/white"
             android:textSize="@dimen/_20ssp"
             android:textStyle="bold" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_23sdp"
+            android:id="@+id/btnsave"
+            android:textColor="@color/black"
+            android:layout_marginLeft="@dimen/_50sdp"
+            android:background="#F3E8FF"
+            android:textStyle="bold"
+            android:text="Save"/>
     </LinearLayout>
 
     //down page
@@ -98,6 +108,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:inputType="text"
+                            android:id="@+id/edclg"
                             android:maxLines="1"
                             android:textSize="@dimen/_10ssp" />
                     </androidx.cardview.widget.CardView>
@@ -141,6 +152,7 @@
                                 android:layout_width="@dimen/_80sdp"
                                 android:layout_height="wrap_content"
                                 android:inputType="text"
+                                android:id="@+id/eddegree"
                                 android:maxLines="1"
                                 android:textSize="@dimen/_10ssp" />
                         </androidx.cardview.widget.CardView>
@@ -155,6 +167,7 @@
                                 android:layout_width="@dimen/_80sdp"
                                 android:layout_height="wrap_content"
                                 android:inputType="text"
+                                android:id="@+id/edresult"
                                 android:maxLines="1"
                                 android:textSize="@dimen/_10ssp" />
                         </androidx.cardview.widget.CardView>
@@ -200,6 +213,7 @@
                                 android:layout_height="wrap_content"
                                 android:inputType="number"
                                 android:maxLines="1"
+                                android:id="@+id/edstart"
                                 android:textSize="@dimen/_10ssp" />
                         </androidx.cardview.widget.CardView>
 
@@ -212,6 +226,7 @@
                                 android:layout_width="@dimen/_80sdp"
                                 android:layout_height="wrap_content"
                                 android:inputType="number"
+                                android:id="@+id/edend"
                                 android:maxLines="1"
                                 android:textSize="@dimen/_10ssp" />
                         </androidx.cardview.widget.CardView>

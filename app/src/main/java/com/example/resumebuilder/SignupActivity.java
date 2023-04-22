@@ -75,9 +75,9 @@ public class SignupActivity extends AppCompatActivity {
                 startActivity(l);
             }
         });
-        CheckBox checkBox = null;
+        CheckBox checkbox = null;
         final View invisibleView = null;
-        checkBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+        checkbox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {

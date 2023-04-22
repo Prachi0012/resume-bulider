@@ -17,23 +17,25 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:gravity="center"
         android:paddingVertical="@dimen/_5sdp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
             android:text="Create Resume"
+            android:layout_marginLeft="@dimen/_30sdp"
             android:textColor="@color/white"
             android:textSize="@dimen/_20ssp"
             android:textStyle="bold" />
         <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="100dp"
-            android:layout_height="40dp"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_23sdp"
             android:id="@+id/btnsave"
             android:textColor="@color/black"
             android:layout_marginLeft="@dimen/_50sdp"
-            android:background="@color/white"
+            android:background="#F3E8FF"
+            android:textStyle="bold"
             android:text="Save"/>
     </LinearLayout>
 
@@ -248,24 +250,28 @@
                                     <RadioGroup
                                         android:layout_width="@dimen/_80sdp"
                                         android:layout_height="wrap_content"
+                                        android:id="@+id/rg"
                                         android:orientation="vertical">
 
                                         <RadioButton
                                             android:layout_width="wrap_content"
                                             android:layout_height="20dp"
                                             android:textSize="@dimen/_10ssp"
+                                            android:id="@+id/rbmale"
                                             android:text="Male"/>
                                         <RadioButton
                                             android:layout_width="wrap_content"
                                             android:layout_height="20dp"
                                             android:textSize="@dimen/_10ssp"
                                             android:layout_marginTop="@dimen/_5sdp"
+                                            android:id="@+id/rbfemale"
                                             android:text="Female"/>
                                         <RadioButton
                                             android:layout_width="wrap_content"
                                             android:layout_height="20dp"
                                             android:layout_marginVertical="@dimen/_5sdp"
                                             android:textSize="@dimen/_10ssp"
+                                            android:id="@+id/rbother"
                                             android:text="Other"/>
                                     </RadioGroup>
 
@@ -282,10 +288,12 @@
                                         android:layout_width="@dimen/_80sdp"
                                         android:layout_height="wrap_content"
                                         android:hint="Indian"
+                                        android:id="@+id/nationality"
                                         android:layout_marginTop="@dimen/_5sdp"
                                         android:inputType="text"
                                         android:maxLines="1"
-                                        android:textSize="@dimen/_10ssp" />
+                                        android:textSize="@dimen/_10ssp"
+                                        tools:ignore="InvalidId" />
 
                                 </androidx.cardview.widget.CardView>
 
@@ -353,6 +361,7 @@
                                         android:inputType="number"
                                         android:maxLines="1"
                                         android:maxLength="10"
+                                        android:id="@+id/etnum"
                                         android:textSize="@dimen/_10ssp" />
 
                                 </androidx.cardview.widget.CardView>

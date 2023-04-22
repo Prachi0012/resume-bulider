@@ -3,6 +3,7 @@ package com.example.resumebuilder;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,6 +11,8 @@ import androidx.appcompat.app.AppCompatActivity;
 public class EducationdetailsActivity extends AppCompatActivity {
 
     ImageView img2,img1,img4,img5,img6,img7,img8,img9,img10,img11,img12;
+
+    EditText edend,edstart,edresult,eddegree,edclg;
 
 
     @Override
@@ -31,6 +34,31 @@ public class EducationdetailsActivity extends AppCompatActivity {
         img10=findViewById(R.id.img10);
         img11=findViewById(R.id.img11);
         img12=findViewById(R.id.img12);
+
+        edend=findViewById(R.id.edend);
+        edstart=findViewById(R.id.edstart);
+        edresult=findViewById(R.id.edresult);
+        eddegree=findViewById(R.id.eddegree);
+        edclg=findViewById(R.id.edclg);
+        String end = edend.getText().toString();
+        String start = edstart.getText().toString();
+        String degree = eddegree.getText().toString();
+        String result = edresult.getText().toString();
+        String clg = edclg.getText().toString();
+
+
+        Intent i = new Intent(EducationdetailsActivity.this, DataActivity.class);
+        i.putExtra("COLLEGE", clg);
+        i.putExtra("RESULT", start);
+        i.putExtra("END", end);
+        i.putExtra("DEGREE", degree);
+        i.putExtra("RESULT", result);
+
+        startActivity(i);
+
+
+
+
         img2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
